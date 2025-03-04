@@ -4,6 +4,7 @@ create table kyc_verifications (
     user_id int(11) not null,
     document_type varchar(255) not null,
     document_file varchar(255) not null,
+    is_verified boolean default false,
     created_at timestamp not null,
     foreign key (admin_id) references admins(id),
     foreign key (user_id) references users(id)
