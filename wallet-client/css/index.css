@@ -1,0 +1,16 @@
+.hero{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 4rem;
+}
+
+.hero > h1 {
+    width: 70%;
+}
+
+.hero > p{
+    width: 80%;
+}
