@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Coolet</title>
+    <link rel="stylesheet" href="./css/base/colors.css">
+    <link rel="stylesheet" href="./css/base/base.css">
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+
+<body class="bg-secondary">
+    <header class="header container">
+        <a class="text-primary body1 font-bold logo" href="./index.html">
+            Coolet
+        </a>
+        <nav class="nav">
+            <ul class="list-none body2">
+                <li><a href="#">Transactions</a></li>
+                <li><a href="#">Future Payments</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a onclick="logout()">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container section font-bold">
+        <h2 class="h2">Welcome <span id="user_first_name">YourName,</span></h2>
+        <div class="bg-primary text-white h2 div-balance">
+            <span>Balance:</span>
+            <span id="balance">[your Balance $]</span>
+        </div>
+    </section>
+    <section></section>
+    <script src="./js/home.js"></script>
+</body>
+
+</html>
