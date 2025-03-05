@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login - Coolet</title>
+    <link rel="stylesheet" href="./css/base/colors.css">
+    <link rel="stylesheet" href="./css/base/base.css">
+    <link rel="stylesheet" href="./css/login_signup.css">
+</head>
+
+<body class="bg-secondary">
+    <header class="header container">
+        <a class="text-primary body1 font-bold logo" href="./index.html">
+            Coolet
+        </a>
+        <nav class="nav">
+            <ul class="list-none body2">
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Guide</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">API Documentation</a></li>
+                <li><a href="./login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container login_signup_box">
+        <form class="bg-primary body2" action="">
+            <h2 class="h2 text-white">Login</h2>
+            <input class="body1" type="email" name="" id="email" placeholder="Email">
+            <input class="body1" type="password" name="" id="pass" placeholder="Password">
+            <input type="button" class="bg-black text-white body1" value="Login" onclick="login()">
+            </input>
+            <p class="body2 text-white">Don't have account ? <a class="text-secondary" href="./signup.html">Sign up</a>
+            </p>
+        </form>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/login.js"></script>
+</body>
+
+</html>
