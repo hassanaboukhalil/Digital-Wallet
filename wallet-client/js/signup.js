@@ -13,8 +13,8 @@ async function signup() {
 
     const form = new FormData();
 
-    form.append("first_name", first_name.value);
-    form.append("last_name", last_name.value);
+    form.append("first_name", capitalize_first_letter(first_name.value));
+    form.append("last_name", capitalize_first_letter(last_name.value));
     form.append("email", email.value);
     form.append("pass", pass.value);
 
@@ -27,6 +27,9 @@ async function signup() {
     if (response.data[0].message == 'success') {
         localStorage.setItem("id", response.data[0].user.id);
         localStorage.setItem("first_name", response.data[0].user.first_name);
+        localStorage.setItem("wallet_id", response.data[0].user.wallet_id);
+        localStorage.setItem("wallet_name", response.data[0].user.wallet_name);
+        localStorage.setItem("balance", response.data[0].user.balance);
         window.location.href = "./home.html";
     } else {
         alert("Signup failed: " + response.data[0].message);
@@ -39,6 +42,12 @@ async function signup() {
 
 
 //* useful functions
+function capitalize_first_letter(str){
+    str = str[0].toUpperCase() + str.slice(1, str.length)
+    return str;
+}
+
+
 function validate_password(pass){
     let contains_nb = false;
     let contains_letter = false;
