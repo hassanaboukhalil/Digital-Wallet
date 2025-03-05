@@ -1,0 +1,17 @@
+
+section{
+    margin-top: 6rem;
+}
+
+
+.div-balance {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    border-radius: 8px;
+    width: fit-content;
+}
+
+.div-balance span {
+    padding: 0.8em;
+}
