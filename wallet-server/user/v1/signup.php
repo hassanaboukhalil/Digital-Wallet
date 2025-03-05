@@ -32,6 +32,10 @@ try {
                 $data_wallet
             ]);
             return;
+        } else {
+            $data['user']['wallet_id'] = $data_wallet['wallet']['wallet_id'];
+            $data['user']['wallet_name'] = $data_wallet['wallet']['wallet_name'];
+            $data['user']['balance'] = $data_wallet['wallet']['balance'];
         }
     }
 
@@ -40,5 +44,5 @@ try {
     ]);
 } catch (Exception $e) {
     http_response_code(400);
-    echo json_encode(["message" => $e->getMessage()]);
+    echo json_encode(["message" => "whyyyyyyyy"]); //$e->getMessage()
 }
