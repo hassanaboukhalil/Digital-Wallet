@@ -3,7 +3,7 @@ create table system_logs (
     admin_id int(11),
     user_id int(11),
     action_description varchar(255) not null,
-    created_at timestamp not null,
+    created_at TIMESTAMP default CURRENT_TIMESTAMP,
     foreign key (admin_id) references admins(id),
     foreign key (user_id) references users(id)
 )

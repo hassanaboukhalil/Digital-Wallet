@@ -4,6 +4,6 @@ create table wallets (
     wallet_name varchar(255) not null,
     balance varchar(255) not null,
     api_key varchar(255) not null,
-    created_at timestamp not null,
+    created_at TIMESTAMP default CURRENT_TIMESTAMP,
     foreign key (user_id) references users(id)
 )
