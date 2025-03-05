@@ -1,5 +1,5 @@
-// console.log(localStorage.getItem("first_name"))
-
+document.getElementById("user_first_name").innerHTML = localStorage.getItem("first_name")
+document.getElementById("balance").innerHTML = localStorage.getItem("balance")
 
 
 //* useful functions
