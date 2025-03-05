@@ -6,6 +6,11 @@ const pass = document.getElementById("pass");
 
 
 async function signup() {
+    if(!validate_password(pass.value)){
+        alert("Your Password should contain letters, numbers and should contain more than 7 characters")
+        return
+    }
+
     const form = new FormData();
 
     form.append("first_name", first_name.value);
@@ -19,12 +24,37 @@ async function signup() {
         form
     );
 
-    // console.log(response.data)
-    if (response.data.success) {
-        localStorage.setItem("id", response.data.user.id);
-        localStorage.setItem("first_name", response.data.user.first_name);
+    if (response.data[0].message == 'success') {
+        localStorage.setItem("id", response.data[0].user.id);
+        localStorage.setItem("first_name", response.data[0].user.first_name);
         window.location.href = "./home.html";
     } else {
-        alert("Signup failed: " + response.data.message);
+        alert("Signup failed: " + response.data[0].message);
     }
 }
+
+
+
+
+
+
+//* useful functions
+function validate_password(pass){
+    let contains_nb = false;
+    let contains_letter = false;
+    if(pass.length < 8){
+        return false
+    }
+
+    for(i = 0 ; i < pass.length ;i++){
+        if(('1234567890').includes(pass[i])){
+            contains_nb = true
+        }
+        else if(("QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm").includes(pass[i])){
+            contains_letter = true
+        }
+    }
+
+    return contains_nb && contains_letter
+}
+//*
