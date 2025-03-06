@@ -1,10 +1,6 @@
 # Coolet
 
-## 1. Use Case Diagram
-
-![Use Case Diagram](er_diagram_wallet_project.png)
-
-## 2. ER Diagram
+## 1. ER Diagram
 
 ### Admin Use Case Diagram
 
@@ -14,7 +10,15 @@
 
 ![User Use Case Diagram](wallet-project-user-use-case-diagram.drawio.png)
 
-## 3. Document APIs
+## 2. Figma Design
+
+- **Design Link:** [Figma Digital Wallet Design](https://www.figma.com/design/52JSKRSHJCpN2r3Etw7IP3/Digtal-Wallet?node-id=0-1&p=f&t=9b3VBRWUJp2hcjlg-0)
+
+## 3. Use Case Diagram
+
+![Use Case Diagram](er_diagram_wallet_project.png)
+
+## 4. Document APIs
 
 ### Deposit API
 
@@ -46,10 +50,6 @@
   - `email` (string): The user's email address.
   - `pass` (string): The user's password.
 
-## 4. Hosting Details
+## 5. Hosting Details
 
 - **API Address:** 15.188.77.241
-
-## 5. Figma Design
-
-- link: https://www.figma.com/design/52JSKRSHJCpN2r3Etw7IP3/Digtal-Wallet?node-id=0-1&p=f&t=9b3VBRWUJp2hcjlg-0
