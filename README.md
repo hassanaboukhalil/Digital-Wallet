@@ -1,6 +1,6 @@
 # Coolet
 
-## 1. ER Diagram
+## 1. Use Case Diagrams
 
 ### Admin Use Case Diagram
 
@@ -14,7 +14,7 @@
 
 - **Design Link:** [Figma Digital Wallet Design](https://www.figma.com/design/52JSKRSHJCpN2r3Etw7IP3/Digtal-Wallet?node-id=0-1&p=f&t=9b3VBRWUJp2hcjlg-0)
 
-## 3. Use Case Diagram
+## 3. ER Diagram
 
 ![Use Case Diagram](er_diagram_wallet_project.png)
 
