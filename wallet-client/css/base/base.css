@@ -13,6 +13,19 @@
   --container-padding-x: 16rem;
 }
 
+
+@media (width < 768px) {
+  :root{
+    --container-padding-x: 5rem !important;
+  }
+}
+
+
+/* .sidebar {
+    display: none;
+} */
+
+
 * {
   padding: 0;
   margin: 0;
