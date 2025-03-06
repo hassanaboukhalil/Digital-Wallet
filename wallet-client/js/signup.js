@@ -20,7 +20,8 @@ async function signup() {
 
 
     const response = await axios.post(
-        "http://localhost:8080/digital_wallet/wallet-server/user/v1/signup.php",
+        // "http://localhost:8080/digital_wallet/wallet-server/user/v1/signup.php",
+        "http://15.188.77.241/wallet-server/user/v1/signup.php",
         form
     );
 
