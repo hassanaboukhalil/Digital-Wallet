@@ -16,7 +16,7 @@
             Coolet
         </a>
         <nav class="nav">
-            <ul class="list-none body2">
+            <ul class="nav-lg-devices list-none body2">
                 <li><a href="#">Transactions</a></li>
                 <li><a href="#">Future Payments</a></li>
                 <li><a href="#">Settings</a></li>
@@ -31,8 +31,54 @@
             <span id="balance">[your Balance $]</span>
         </div>
     </section>
+
+    <section class="container section">
+        <div class="grid-transaction-actions h3">
+
+            <div class="grid-item bg-primary text-white" onclick="open_deposit_dialog()"><span>Deposit</span><img
+                    src="./assets/images/deposit_svg.svg" alt="deposit svg"></div>
+
+            <div class="grid-item bg-primary text-white"><span>Withdraw</span>
+                <img src="./assets/images/withdraw_svg.svg" alt="deposit withdraw">
+            </div>
+
+            <div class="grid-item bg-primary text-white"><span>Send</span><img src="./assets/images/send_svg.svg"
+                    alt="send svg">
+            </div>
+
+            <div class="grid-item bg-primary text-white"><span>Receive</span><img src="./assets/images/receive_svg.svg"
+                    alt="receive svg"></div>
+        </div>
+        <dialog class="bg-primary" id="deposit_dialog" close>
+            <div>
+                <div class="title-and-close">
+                    <h2 class="h2 text-white">Deposit</h2>
+                    <button onclick="close_deposit_dialog()">
+                        <img class="bg-primary" src="./assets/images/close.svg" alt="">
+                    </button>
+                </div>
+                <div class="input-div">
+                    <input class="body1" type="text" name="" id="card_holder_name_deposit"
+                        placeholder="Card Holder Name">
+                    <input class="body1" type="number" name="" id="card_holder_nb_deposit" placeholder="Card Number">
+                    <div class="inputs-div-flex">
+                        <input class="body1" type="date" name="" id="card_expired_date_nb_deposit"
+                            placeholder="Expired Date">
+                        <input class="body1" type="number" name="" id="card_holder_cvv_deposit" placeholder="CVV">
+                    </div>
+                    <input class="body1" type="number" name="" id="deposit_amount" placeholder="Amount">
+                    <button class="bg-primary body2 text-white btn" onclick="deposit()">
+                        <p>Submit</p>
+                    </button>
+                </div>
+            </div>
+        </dialog>
+    </section>
     <section></section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <script src="./js/home.js"></script>
+
 </body>
 
 </html>

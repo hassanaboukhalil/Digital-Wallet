@@ -15,3 +15,80 @@ section{
 .div-balance span {
     padding: 0.8em;
 }
+
+
+.grid-transaction-actions{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 3rem;
+    position: relative;
+}
+
+
+.grid-transaction-actions .grid-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4em;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.grid-transaction-actions .grid-item:hover{
+    /* z-index: 50;
+    width: 130%;
+    height: 120%; */
+    box-shadow: 7px 13px 5px 2px #1D1D1D;
+}
+
+dialog[open]{
+    margin: auto;
+    width: 50%;
+    gap: 3rem;
+    padding: 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+dialog input{
+    width: 100%;
+    padding: 0.5em 0.7em;
+}
+
+/* dialog button {
+    padd
+} */
+
+dialog .title-and-close{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* dialog .title-and-close img {
+    background-color: ;
+} */
+
+dialog .input-div{
+    width: 100%;
+    padding: 0.5em 0.7em;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+dialog .inputs-div-flex{
+    display: flex;
+    gap: 2rem;
+}
+
+.btn > p {
+    width: fit-content;
+    padding: 0.5em 0.7em;
+    display: flex;
+    gap: 0.2em;
+}
